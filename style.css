@@ -1,0 +1,346 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+h1 {
+  font-size: 2.6rem;
+}
+
+li,
+button,
+label,
+input,
+p {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 4.8rem;
+}
+h3 {
+  font-size: 3rem;
+  font-weight: normal;
+}
+h4,
+h5 {
+  font-size: 2.8rem;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+
+button {
+  padding: 2rem 6rem;
+  background-color: #4c6e97;
+  border: none;
+  color: white;
+  font-size: 1.8rem;
+  cursor: pointer;
+  transition: background 0.5s ease-in-out;
+}
+
+button:hover {
+  background: #27394e;
+}
+
+button:focus {
+  background: #b0b7c1;
+  outline-style: solid;
+}
+
+/* NAV WITH HERO */
+
+.main-head {
+  background-color: #131c27;
+  color: white;
+  position: sticky;
+  top: 0px;
+  z-index: 3;
+}
+nav {
+  min-height: 10vh;
+  display: flex;
+  width: 90%;
+  margin: auto;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  flex: 1 1 40rem;
+  justify-content: space-around;
+  align-items: center;
+}
+#logo {
+  flex: 2 1 40rem;
+  font-family: "Pattaya", sans-serif;
+  font-weight: normal;
+}
+
+.hero {
+  min-height: 90vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+    url("img/pexels-s-migaj-953182.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero h3 {
+  padding: 5rem;
+}
+
+/* locations SECTION */
+
+#locations {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+    url("img/pexels-jonathan-lassen-2404669.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.locations-head {
+  width: 90%;
+  margin: auto;
+}
+
+.locations-head h2 {
+  padding: 1rem 0rem;
+  text-decoration: underline;
+  text-decoration-thickness: 0.5rem;
+}
+
+.locations-head h3 {
+  padding: 4rem 0rem;
+  background: linear-gradient(#131c27, white);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cloud {
+  position: absolute;
+  height: 300px;
+  width: 300px;
+  top: 0%;
+  right: 0%;
+}
+
+.moving-1 {
+  z-index: 2;
+
+  animation: cloudAni 3s infinite alternate ease-in-out;
+}
+
+.moving-2 {
+  top: 20%;
+  z-index: 1;
+  opacity: 0.5;
+  animation: cloudAni 4s infinite alternate ease-in-out;
+}
+
+@keyframes cloudAni {
+  from {
+    transform: translate(10%, -10%);
+  }
+  to {
+    transform: translate(0%, 0%);
+  }
+}
+
+/* BENEFITS SECTION */
+
+#benefits {
+  min-height: 100vh;
+}
+
+.benefits-head {
+  padding: 3rem;
+  min-height: 30vh;
+  background-color: #132233;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.benefits-head h2 {
+  margin-top: 1rem;
+  padding: 2rem;
+  font-size: 3rem;
+}
+
+.benefits-head h3 {
+  padding: 1rem;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  min-height: 70vh;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.box {
+  min-height: 50vh;
+  flex: 1 1 25rem;
+  margin: 2rem 5rem;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1),
+    0px 30px 30px rgba(0, 0, 0, 0.1);
+}
+.box img {
+  max-width: 15%;
+  margin: 2rem;
+}
+.box h4,
+p {
+  padding: 3rem;
+}
+
+.coni {
+  background-color: #4d76a4;
+}
+
+/*CONTACT SECTION*/
+
+#contact {
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+    url("img/pexels-stephan-seeber-1261728.jpg");
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-wrapper {
+  background: rgba(19, 28, 39, 0.8);
+  width: 60%;
+  color: white;
+  border-radius: 20px;
+}
+
+.form-head {
+  text-align: center;
+  padding: 4rem;
+}
+
+.name-part,
+.email-part {
+  padding: 3rem;
+  text-align: center;
+}
+
+.form-wrapper label {
+  margin: 0rem 3rem;
+}
+
+.form-wrapper button {
+  width: 100%;
+  padding: 2rem;
+  margin-top: 8rem;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.form-wrapper input {
+  padding: 1rem 3rem;
+}
+
+footer {
+  color: white;
+  background: rgba(19, 28, 39, 1);
+}
+
+.footer-wrapper {
+  display: flex;
+  padding: 2rem;
+  width: 90%;
+  margin: auto;
+  align-items: center;
+  min-height: 10vh;
+  flex-wrap: wrap;
+}
+
+.footer-wrapper img {
+  height: 20px;
+}
+
+footer h5 {
+  flex: 1 1 40rem;
+}
+
+footer ul {
+  display: flex;
+  list-style: none;
+  flex: 1 1 40rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* media queries*/
+
+@media screen and (max-width: 932px) {
+  html {
+    font-size: 45%;
+  }
+  nav {
+    text-align: center;
+  }
+  #logo {
+    padding: 2rem;
+  }
+  .cloud {
+    height: 40rem;
+    pointer-events: none;
+  }
+  .moving-1 {
+    z-index: -1;
+  }
+  .moving-2 {
+    z-index: -2;
+  }
+  .locations-head h3 {
+    background: rgba(19, 28, 39, 0.8);
+    -webkit-text-fill-color: white;
+  }
+  footer {
+    text-align: center;
+  }
+  footer h5 {
+    padding-bottom: 3rem;
+  }
+
+  .form-wrapper {
+    width: 100%;
+  }
+}
